@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<!--兼容IE-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--移动设备优先-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>列表</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bootcss.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	</head>
+
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-default ">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+       				<span class="icon-bar"></span>
+       				<span class="icon-bar"></span>
+       				<span class="icon-bar"></span>
+       				<span class="icon-bar"></span>
+       			</button>
+					<a href="" class="navbar-brand">Maizi Admin</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a>
+						</li>
+						<li>
+							<a href="user-list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a>
+						</li>
+						<li class="active">
+							<a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a>
+						</li>
+						<li>
+							<a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#index1" class="dropdown" data-toggle="dropdown">
+								Admin
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href=""><span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#html5"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--导航-->
+		<!--左侧-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="list-group">
+						<a href="content.html" class="list-group-item ">内容管理</a>
+						<a href="content-post.html" class="list-group-item active" role="button" data-toggle="modal" data-target="#myModal">添加内容</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="page-header">
+						<h4>内容管理</h4>
+					</div>
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="content.html">内容管理</a>
+						</li>
+						<li>
+							<a href="content-post.html">添加内容</a>
+						</li>
+					</ul>
+
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="name">标题</label>
+							<input type="text" id="name" class="form-control" placeholder="请输入用户名" />
+						</div>
+						<div class="form-group">
+							<label for="name">文章内容</label>
+							<textarea class="form-control" rows="15" cols="10"></textarea>
+						</div>
+                         
+                        <div class="checkbox">
+                        	<label for="">
+                        		<input type="checkbox" />
+                        		全局置顶
+                        	</label>
+                        	<button type="submit" class="btn btn-default pull-right"> 发布文章</button>
+                        </div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery.1.12.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--切换内容生硬     单页平滑滚动导航插件-->
+	<script src="js/jquery.singlePageNav.min.js"></script>
+	<!--页面在向下滚动的时候   触发animate动画库  动画-->
+	<script src="js/wow.min.js"></script>
+
+</html>

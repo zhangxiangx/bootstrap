@@ -1,0 +1,35 @@
+body {
+	font-family: "微软雅黑";
+}
+
+.progress{
+	margin-bottom: 6px;
+}
+.img1{
+	width: 64px;
+	height: 64px;
+	border-radius:50% ;
+}
+.buttom{
+	margin-top: 15px;
+}
+.page-header{
+	margin-top: 0;
+}
+.page-header h1{
+	margin: 0;
+	font-size: 16px;
+}
+.user_search{
+	padding: 10px;
+	border: solid 1px #ddd;
+	border-top:0 ;
+	
+	
+}
+.taglist{
+	margin-top: 15px;
+}
+.taglist .alert{
+	margin-right: 10px;
+}
